@@ -1,0 +1,31 @@
+.Teacher-tag {
+  font-family: Norican, cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgb(107, 42, 230);
+  font-size: 24px;
+  font-weight: 400;
+  padding-top:35px;
+  margin-bottom:22px;
+  line-height: 26px;
+}
+.Teacher-tag span {
+  width: 90px;
+  height: 2px;
+  background: #8b5cff;
+  display: inline-block;
+}
+
+/* Main heading */
+.Teacher-title {
+  font-family: Poppins, sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #ffffff;
+  line-height: 52px;
+  text-align:center;
+  
+}

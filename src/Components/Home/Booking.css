@@ -1,0 +1,246 @@
+body {
+  background:rgb(19, 19, 19);
+  font-family: Poppins, sans-serif;
+  color: white;
+}
+
+/* ================= TRIAL SECTION ================= */
+
+.trial-section {
+  padding: 100px;
+  text-align: center;
+  
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 30px;
+  padding-top: 70px;
+}
+
+/* Top purple line + text + line */
+.trial-tagline {
+  font-family: Norican, cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgb(107, 42, 230);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 22px;
+  line-height: 26px;
+}
+
+.trial-tagline span {
+  width: 90px;
+  height: 2px;
+  background: #8b5cff;
+  display: inline-block;
+}
+
+/* Main heading */
+.trial-title {
+  font-family: Poppins, sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #ffffff;
+  line-height: 52px;
+}
+
+/* Middle text */
+.trial-subtext {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: rgb(167, 95, 158);
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* Bottom small text */
+.trial-note {
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  color: rgb(167, 95, 158);
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* ================= FORM ================= */
+
+.trial-form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.note {
+  color: #ff4c4c;
+  margin-bottom: 30px;
+}
+
+/* Two-column input rows */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px 44px 15px 18px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 12px;
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-box input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/* ================= CHECKBOXES ================= */
+
+.checkbox-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.checkbox-row {
+  display: flex;
+  gap:200px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.checkbox-group {
+  padding-right: 10px;
+}
+
+.checkbox-group h5 {
+  margin-bottom: 35px;
+}
+
+.checkbox-group svg {
+  fill: darkred;
+  width: 19px;
+  height: 19px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* ================= TEXTAREA ================= */
+
+.form-textarea {
+  width: 100%;
+  min-height: 160px;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  padding: 18px;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  margin-top: 40px;
+}
+
+.form-textarea::placeholder {
+  color: #cccccc;
+}
+
+/* ================= EXCITED TEXT ================= */
+
+.excited-text {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.excited-text svg {
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+  margin-left: 8px;
+  fill: darkgoldenrod;
+}
+
+/* ================= BUTTON ================= */
+
+.trial-button {
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 14px;
+  border: none;
+  background: #a9a9a9;
+  color: #b30000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.trial-button:hover {
+  opacity: 0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .trial-section {
+    padding: 60px 40px;
+  }
+
+  .checkbox-row {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .checkbox-title {
+    text-align: center;
+  }
+}

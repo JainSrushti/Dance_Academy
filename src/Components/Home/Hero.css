@@ -1,0 +1,112 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;          /* full screen section */
+  overflow: hidden;
+}
+
+/* Blur the video */
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* keep full coverage */
+  filter: blur(8px);       /* <<< blur strength */
+  transform: scale(1.1);   /* zoom slightly to hide blur edges */
+}
+
+
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;   /* move content to bottom */
+  align-items: flex-start;
+  padding-left: 80px;
+  padding-bottom: 60px;        /* distance from bottom */
+  gap: 20px;
+  color: #fff;
+   pointer-events: none;
+}
+
+/* Small heading */
+.tagline {
+    font-weight:400;
+    font-family:Norican,cursive;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-style: normal;
+  color:#7d50ff;
+  line-height: 26px;
+}
+.tagline span{
+
+  width: 70px;
+  height: 2px;
+  background: #7d50ff;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;   
+}
+
+/* Main heading */
+.hero-overlay h1 {
+    font-family:Poppins,sans-serif;
+  font-size: 60px;
+  line-height: 84px;
+  font-weight:600;
+  font-style:normal
+}
+
+.hero-overlay h1 span {
+  color: #ffffff;
+}
+
+/* Buttons section */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Purple CTA button */
+.primary-btn {
+    font-family: poppins,sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 400;
+  background: #7b3cff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Circle play button */
+.play-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+/* Play icon */
+.play-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: #ffffff;   /* makes icon white */
+}
+
+
+/* Play label */
+.play-label {
+  font-size: 16px;
+}
