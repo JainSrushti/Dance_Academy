@@ -17,7 +17,11 @@
 
   position: relative;
   transition: all 0.4s ease;
+
+  z-index: 9999;
 }
+
+
 
 /* hide top bar on scroll */
 .hide-top {
@@ -69,10 +73,13 @@
 .social svg {
   width: 22px;
   height: 22px;
-  cursor: pointer;
-  transition: transform 0.2s;
-  pointer-events: none;
+  transition: transform 0.2s ease;
 }
+
+.social a:hover svg {
+  transform: scale(1.1);
+}
+
 
 .social .ig svg { fill: #E4405F; }
 .social .fb svg { fill: #1877F2; }

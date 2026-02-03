@@ -1,66 +1,58 @@
+.news-section {
+  background: #0b0b0b;
+  padding-bottom: 80px;
+}
+
+/* Tag */
 .News-tag {
   font-family: Norican, cursive;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 14px;
   color: rgb(107, 42, 230);
   font-size: 24px;
-  font-weight: 400;
-  padding-top:35px;
-  margin-bottom:22px;
-  line-height: 26px;
+  padding-top: 35px;
+  margin-bottom: 22px;
 }
+
 .News-tag span {
   width: 90px;
   height: 2px;
   background: #8b5cff;
-  display: inline-block;
 }
 
-/* Main heading */
+/* Title */
 .News-title {
-  font-family: Poppins, sans-serif;
   font-size: 44px;
   font-weight: 600;
-  margin-bottom: 18px;
   color: #ffffff;
-  line-height: 52px;
-  text-align:center;
-  
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-/* ===============================
-   SLIDER CONTAINER
-================================ */
+/* Wrapper */
 .slider-wrapper {
-  width: 100%;
+  max-width: 1100px;
+  margin: auto;
   overflow: hidden;
-  padding: 60px 0;
-  background: #0b0b0b; /* optional dark bg */
+  padding: 0 20px;
 }
 
-/* ===============================
-   SLIDER TRACK (MOVING PART)
-================================ */
+/* Track */
 .slider-track {
   display: flex;
   transition: transform 0.8s ease-in-out;
-  will-change: transform;
 }
 
-/* ===============================
-   CARD
-================================ */
+/* Card */
 .card {
-  min-width: 33.3333%;
-  padding: 20px;
+  flex: 0 0 33.3333%;
+  padding: 15px;
   box-sizing: border-box;
+ 
+  background-color: #6b6b6b;
 }
 
-/* ===============================
-   CARD INNER DESIGN
-================================ */
 .card img {
   width: 100%;
   height: 260px;
@@ -69,9 +61,6 @@
   margin-bottom: 24px;
 }
 
-/* ===============================
-   CARD TITLE
-================================ */
 .card h3 {
   color: #ffffff;
   font-size: 22px;
@@ -80,13 +69,11 @@
   margin-bottom: 24px;
 }
 
-/* ===============================
-   READ MORE BUTTON
-================================ */
 .card button {
   background: transparent;
   color: #ffffff;
   border: 1px solid #6b6b6b;
+  /* padding: 12px 26px; */
   padding: 12px 26px;
   font-size: 14px;
   font-weight: 600;
@@ -100,21 +87,16 @@
   color: #000000;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
-
-/* Tablet → 2 cards */
+/* Responsive */
 @media (max-width: 1024px) {
   .card {
-    min-width: 50%;
+    flex: 0 0 50%;
   }
 }
 
-/* Mobile → 1 card */
 @media (max-width: 640px) {
   .card {
-    min-width: 100%;
+    flex: 0 0 100%;
   }
 
   .card img {

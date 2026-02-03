@@ -15,7 +15,9 @@ function News() {
   const visible = 3;
   const total = cards.length;
 
-  // 🔹 Auto forward scroll
+  // Clone first 3 cards for smooth infinite loop
+  const extendedCards = [...cards, ...cards.slice(0, visible)];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => prev + 1);
@@ -24,63 +26,47 @@ function News() {
     return () => clearInterval(interval);
   }, []);
 
-  // 🔹 Forward-only infinite loop (NO backward)
   useEffect(() => {
-    if (index === total) {
-      const track = trackRef.current;
-      if (!track) return;
+    const track = trackRef.current;
 
-      // Wait till slide animation completes
+    if (index === total) {
       setTimeout(() => {
         track.style.transition = "none";
         setIndex(0);
+        track.style.transform = `translateX(0%)`;
 
-        // Force browser repaint
-        track.getBoundingClientRect();
-
+        track.getBoundingClientRect(); // force repaint
         track.style.transition = "transform 0.8s ease-in-out";
       }, 800);
     }
   }, [index, total]);
 
   return (
-<div>
-    <p className="News-tag">
+    <section className="news-section">
+      <p className="News-tag">
         <span></span>Blog & News<span></span>
       </p>
 
       <h2 className="News-title">Our Latest News & Articles</h2>
 
-    
-    
-    <div className="slider-wrapper">
-      <div
-        ref={trackRef}
-        className="slider-track"
-        style={{
-          transform: `translateX(-${index * (100 / visible)}%)`,
-        }}
-      >
-        {/* Original cards */}
-        {cards.map((card) => (
-          <div className="card" key={card.id}>
-            <img src={card.img} alt={card.title} />
-            <h3>{card.title}</h3>
-            <button>READ MORE</button>
-          </div>
-        ))}
-
-        {/* Clone first 3 cards */}
-        {cards.slice(0, visible).map((card) => (
-          <div className="card" key={`clone-${card.id}`}>
-            <img src={card.img} alt={card.title} />
-            <h3>{card.title}</h3>
-            <button>READ MORE</button>
-          </div>
-        ))}
+      <div className="slider-wrapper">
+        <div
+          ref={trackRef}
+          className="slider-track"
+          style={{
+            transform: `translateX(-${index * (100 / visible)}%)`,
+          }}
+        >
+          {extendedCards.map((card, i) => (
+            <div className="card" key={i}>
+              <img src={card.img} alt={card.title} />
+              <h3>{card.title}</h3>
+              <button>READ MORE</button>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-    </div>
+    </section>
   );
 }
 

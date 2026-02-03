@@ -77,7 +77,7 @@ function Info() {
     <div className="features-container">
         
         <div className="feature-card">
-          <img src="/feature_1_1.png" alt="icon" className="feature-icon" />
+          <img src="/moderndance.png" alt="icon" className="feature-icon" />
           <h3>Join Our Dance Class</h3>
           <p>
             Intrinsically predominate performance based total linkage
@@ -86,7 +86,7 @@ function Info() {
         </div>
 
         <div className="feature-card">
-          <img src="/feature_1_2.png" alt="icon" className="feature-icon" />
+          <img src="/news4.jpg" alt="icon" className="feature-icon" />
           <h3>Dance Coreography</h3>
           <p>
             Vivamus suscipit tortor eget felis porttitor volutpat.
@@ -95,7 +95,7 @@ function Info() {
         </div>
 
         <div className="feature-card">
-          <img src="/feature_1_1.png" alt="icon" className="feature-icon" />
+          <img src="salsa.png" alt="icon" className="feature-icon" />
           <h3>Perform Onstage</h3>
           <p>
             Nulla porttitor accumsan tincidunt.
@@ -165,198 +165,7 @@ function Info() {
 
        </div>
 
-</section>
-
-    <section className="upper">
-
-      <div className="offer-title">
-       
-      <p className="smalline">
-    
-      <span></span>
-                    Thanks for choosing us to learn from
-                <span></span>
-      </p>
-       <br/>
-      <h2>Attractive Discounts & Offers</h2>
-      </div>
-
-      <div className="offer-btn">
-        <a href="#">View All Discounts</a>
-      </div>
-</section>
-
-<section className="offercard">
-  <div className="card-track">
-
-    {/* ---- Cards (1st set) ---- */}
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">01</div>
-      </div>
-      <h2 className="card-title">
-        ON THE SPOT Discount <br />
-        <span>(Upto Rs. 500/- Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">02</div>
-      </div>
-      <h2 className="card-title">
-        24-HOURS Discount <br />
-        <span>(Upto Rs. 300/- Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">03</div>
-      </div>
-      <h2 className="card-title">
-        Opt EASY INSTALLMENTS <br />
-        <span>(2 Installments)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">04</div>
-      </div>
-      <h2 className="card-title">
-        MULTIPLE STYLE COMBOS <br />
-        <span>(Flat 10% Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">05</div>
-      </div>
-      <h2 className="card-title">
-        SALSA COUPLE Discount <br />
-        <span>(Rs. 500/- Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">06</div>
-      </div>
-      <h2 className="card-title">
-        FRIENDS GROUP Discount <br />
-        <span>(Rs. 200/- Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">07</div>
-      </div>
-      <h2 className="card-title">
-        REFER A FRIEND <br />
-        <span>(Rs. 5200/- Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    {/* ---- Duplicate cards (for infinite scroll) ---- */}
-    <div className="card">
-      <div className="card-header"><div className="card-number">01</div></div>
-      <h2 className="card-title">ON THE SPOT Discount<br /><span>(Upto Rs. 500/- Off)</span></h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header"><div className="card-number">02</div></div>
-      <h2 className="card-title">24-HOURS Discount<br /><span>(Upto Rs. 300/- Off)</span></h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header"><div className="card-number">03</div></div>
-      <h2 className="card-title">Opt EASY INSTALLMENTS<br /><span>(2 Installments)</span></h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">04</div>
-      </div>
-      <h2 className="card-title">
-        MULTIPLE STYLE COMBOS <br />
-        <span>(Flat 10% Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">05</div>
-      </div>
-      <h2 className="card-title">
-        SALSA COUPLE Discount <br />
-        <span>(Rs. 500/- Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">06</div>
-      </div>
-      <h2 className="card-title">
-        FRIENDS GROUP Discount <br />
-        <span>(Rs. 200/- Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-    <div className="card">
-      <div className="card-header">
-        <div className="card-number">07</div>
-      </div>
-      <h2 className="card-title">
-        REFER A FRIEND <br />
-        <span>(Rs. 5200/- Off)</span>
-      </h2>
-      <p className="card-text">content</p>
-      <button className="read-btn">READ MORE</button>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-     
+    </section>
     </div>
   )
 }
